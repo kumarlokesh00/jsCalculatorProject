@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    overflow: hidden;
+}
+
+
+.box{
+    position: relative;
+   
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#f1f4f9,#dff1ff);
+}
+
+section .glass{
+    position: absolute;
+    filter: blur(150px);
+
+}
+
+section .glass:nth-child(1){
+    top:-350px;
+    width: 600px;
+    height: 600px;
+    background: #ff359b;
+}
+
+section .glass:nth-child(2){
+    bottom:-150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background:#ffff80;
+}
+
+section .glass:nth-child(3){
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    background: #00d2ff;
+}
+
+.box .square1{
+    position:absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    top: -50px;
+    right: -60px;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.box .square2{
+    position:absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    top: -25px;
+    right: 155px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+}
+
+.box .square3{
+    position:absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    bottom: 100px;
+    right: -80px;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+
+.box .square4{
+    position:absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    top: 200px;
+    left: -80px;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+
+
+
+
+.calculator{
+    display: grid;
+    grid-template-rows: 33% auto;
+    width:300px;
+    position: relative;
+    height:500px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+
+.calc-body{
+    
+    border-radius: 10px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column  ;
+    justify-content: flex-end;
+    align-items:flex-end;
+    
+}
+
+.calc-body h2 {
+    color:white;
+    height: 30px;
+    width: 280px; 
+    font-size: 22px;
+    padding-right: 20px;
+    
+}
+.calc-body #input {
+    color: blanchedalmond;
+    border-radius: 10px;width: 280px;
+    height:30px ;
+    position:absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    top: 100px;
+    right: 0;
+    font-size: 22px;
+    z-index: 2;
+    margin: 10px;
+    text-align: right;
+    padding:2px 5px 2px 10px;
+    
+
+}
+
+
+.calc-body #output {
+    color: blanchedalmond;
+    border-radius: 10px;width: 280px;
+    height:30px ;
+    position:absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    top: 65px;
+    right: 0;
+    font-size: 22px;
+    z-index: 2;
+    text-align: right;
+    margin: 10px;
+    padding:2px 5px 2px 10px;
+   
+}
+.calc-footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows:auto auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: space-evenly;
+    padding: 20px ;
+    z-index: 3;
+}
+
+.calc-footer div{
+    height: 50px;
+    display: flex;
+    width:50px;
+    font-weight: 500;
+    background:linear-gradient(to bottom,#f6f8ff,#bed9f5e8);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow:10px 10px 15px rgb(249 104 181);
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+
+.calc-footer div:hover{
+    background: rgb(249 104 181);
+    color: white;
+    box-shadow: none;
+}
+.calc-footer .operator{
+    background:rgb(249 104 181);
+    color: white;
+    box-shadow: 10px 10px 15px rgb(85 255 208);
+}
+
+.calc-footer .operator:hover{
+    background:linear-gradient(to bottom,#f6f8ff,#bed9f5e8);
+    color: black;
+}
+.title{
+    color: #ff66d9;
+    width: 300px;
+    height:60px ;
+    position:absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1) ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    top: 150px;
+    left: -500px;
+    font-size: 25px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title span{
+    color: #80ffcc
+}
+
